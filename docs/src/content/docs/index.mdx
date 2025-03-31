@@ -23,145 +23,59 @@ hero:
 ---
 
 import { CardGrid, Card } from '@astrojs/starlight/components';
-import AboutAstro from '~/components/about-astro.astro';
-import TestimonialGrid from '~/components/testimonial-grid.astro';
-import Testimonial from '~/components/testimonial.astro';
+
 
 <CardGrid stagger>
-	<Card title="Gestión de pedidos" icon="open-book">
-		Sistema de seguimiento de pedidos, actualización del estado de los pedidos en tiempo real, historial de pedidos.
-	</Card>
-	<Card title="Gestión de productos" icon="rocket">
-		Administra tu inventario de productos con facilidad. Incluye características como la categorización de productos, actualización de precios y stock en tiempo real.
-	</Card>
-	<Card title="Controles administrativos" icon="document">
-		Herramientas administrativas avanzadas que incluyen generación de informes, control de acceso basado en roles y monitoreo de actividades.
-	</Card>
-	<Card title="Control de cajas" icon="puzzle">
-		Sistema completo de gestión de cajas que permite el seguimiento de transacciones en tiempo real, conciliación de caja diaria, gestión de múltiples cajas y terminales.
-	</Card>
+  <Card title="🔐 Autenticación" icon="shield">
+    Gestión segura de acceso al sistema, recuperación de contraseñas y configuración de autenticación en dos pasos.
+  </Card>
+
+  <Card title="👥 Gestión de Clientes" icon="users">
+    Registro completo de clientes con historial de compras, créditos y segmentación comercial avanzada.
+  </Card>
+
+  <Card title="📦 Sistema de Pedidos" icon="package">
+    Creación, seguimiento y facturación de pedidos con estados personalizables y flujos de aprobación.
+  </Card>
+
+  <Card title="🛠️ Control de Trabajos" icon="settings">
+    Órdenes de producción automatizadas con priorización para taller y asignación de recursos.
+  </Card>
+
+  <Card title="📦 Gestión de Productos" icon="box">
+    Administración completa de inventario con variantes, categorías múltiples y sincronización de stock.
+  </Card>
+
+  <Card title="💰 Control de Cajas" icon="dollar">
+    Sistema integral para apertura/cierre diario, conciliación bancaria y reportes financieros.
+  </Card>
+
+  <Card title="📊 Estadísticas" icon="bar-chart">
+    Generación de reportes personalizados, análisis de ventas y exportación de datos comerciales.
+  </Card>
+
+  <Card title="👥 Administración de Equipo" icon="user">
+    Gestión de usuarios, horarios, turnos y monitoreo de actividades del personal.
+  </Card>
+
+  <Card title="💸 Movimientos" icon="credit-card">
+    Registro contable completo con integración a sistemas externos y comprobantes electrónicos.
+  </Card>
+
+  <Card title="⚙️ Ajustes del Sistema" icon="tool">
+    Configuración global, personalización de campos y gestión de copias de seguridad automatizadas.
+  </Card>
+
+  <Card title="🏷️ Gestión de Precios" icon="tag">
+    Listas especiales por cliente, actualización masiva de precios y promociones temporales.
+  </Card>
+
+  <Card title="🛒 Ecommerce" icon="shopping-cart">
+    Sincronización bidireccional de catálogo, pedidos online y pasarelas de pago integradas.
+  </Card>
 </CardGrid>
 
 
-{/* Este comentario es privado y no será visible en el HTML renderizado
+<br />
 
-
-<TestimonialGrid title="What people are saying">
-  <Testimonial
-    name="Rachel"
-    handle="rachelnabors"
-    cite="https://twitter.com/astrodotbuild/status/1724934718745915558"
-  >
-    The Astro team have EVOLVED how docs can be done and you can get it all out of the box with their Starlight project.
-  </Testimonial>
-  <Testimonial
-    name="Flavio"
-    handle="flaviocopes"
-    cite="https://twitter.com/flaviocopes/status/1738237658717905108"
-  >
-    Astro’s official starter kit Starlight is a truly incredible tool for building a documentation website
-  </Testimonial>
-  <Testimonial
-    name="Tomek"
-    handle="sulco"
-    cite="https://twitter.com/sulco/status/1735610348730802342"
-  >
-    Starlight is our go-to example of a great DX: the speed, convenience, and
-    attention to details is inspiring. It takes care of the tech and the looks,
-    so you can focus on your content 👏
-     
-    StackBlitz team absolutely loves it!
-  </Testimonial>
-  <Testimonial
-    name="Roberto"
-    handle="RmeetsH"
-    cite="https://twitter.com/RmeetsH/status/1735783992018760090"
-  >
-    Starlight has been a game-changer for me, allowing me to focus on content creation.
-
-    Its intuitive design not only streamlines my workflow but also reduces onboarding time for open-source developers.
-
-
-
-  </Testimonial>
-  <Testimonial
-    name="Joel"
-    handle="jhooks"
-    cite="https://twitter.com/jhooks/status/1727405160547418405"
-  >
-    Spent some more time with Starlight for the Course Builder docs and it’s been great so far. Lots of nice touches and can focus on writing in Markdown and not fiddling with the site.
-  </Testimonial>
-  <Testimonial
-    name="Rick"
-    handle="rick_viscomi"
-    cite="https://twitter.com/rick_viscomi/status/1665867447910510593"
-  >
-    Started playing with Starlight. Gotta say I’m very impressed with the performance out of the box.
-
-    💯💯💯💯
-
-  </Testimonial>
-  <Testimonial
-    name="Nicolas"
-    handle="beaussan"
-    cite="https://twitter.com/beaussan/status/1735625189583466893"
-  >
-    Starlight is the best way to get started with documentation, between the
-    power and speed of Astro, and the tooling from Starlight, it’s a match in
-    heaven.
-
-    It has been my go to for a while now, and I keep on loving it!
-
-  </Testimonial>
-  <Testimonial
-    name="Sylwia"
-    handle="SylwiaVargas"
-    cite="https://x.com/SylwiaVargas/status/1726556825741578286"
-  >
-    I used Starlight in my last job and loved it. Great components, intuitive
-    design, and super-responsive community (whenever anyone needed something,
-    they’d ship it soonish or tell you a workaround). Very pleasant experience.
-  </Testimonial>
-  <Testimonial
-    name="Lou Cyx"
-    handle="loucyx"
-    cite="https://elk.zone/m.webtoo.ls/@loucyx@mastodon.social/111587380021362284"
-  >
-    The docs on my monorepo site look better than ever thanks to Starlight. It’s extremely easy to use without losing all the power of Astro. Thank you for working on it!
-  </Testimonial>
-  <Testimonial
-    name="BowTiedWebReaper"
-    handle="BowTiedWebReapr"
-    cite="https://twitter.com/BowTiedWebReapr/status/1735633399501697517"
-  >
-    Starlight is my go-to tool for documentation. It made it super easy to add docs to my existing Astro product website, vs needing a subdomain to use with another tool.
-  </Testimonial>
-  <Testimonial
-    name="Jeff"
-    handle="J_Everhart383"
-    cite="https://twitter.com/J_Everhart383/status/1691900590048292908"
-  >
-    I’ve been rebuilding the WPEngine Atlas Platform docs. Trust me when I say Starlight has everything you need to make an A+ docs platform&nbsp;🙌
-  </Testimonial>
-  <Testimonial
-    name="Chloe"
-    handle="solelychloe"
-    cite="https://twitter.com/solelychloe/status/1695115277602628082"
-  >
-    Give Starlight a try!
-
-    I use it for a few of my sites and it’s great.
-
-  </Testimonial>
-</TestimonialGrid>
-
-*/}
-
-
-<AboutAstro>
-
-Creado en Astro, el framework web todo-en-uno diseñado para la velocidad.
-
-[Aprende sobre Allianzy Inc.](https://allianzy.com/)
-
-</AboutAstro>
+© 2025 [Iconos SRL](https://iconossrl.com.ar/). Todos los derechos reservados.
