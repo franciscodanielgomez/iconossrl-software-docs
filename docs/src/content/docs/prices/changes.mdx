@@ -1,0 +1,48 @@
+---
+title: Manejo de la Lista de Precios
+description: Guía para evitar errores de visualización de productos en Taller debido a categorías mal escritas.
+---
+
+### Problema Común
+Cuando un producto no aparece en el área de **Taller**, suele deberse a que su categoría no coincide exactamente con los filtros del sistema (tildes, mayúsculas o espacios incorrectos).  
+**Ejemplo:**  
+El producto *"CARTEL DE RECIBIDA CIRCULAR 1 X 1 CON CORTE"* no era visible porque su categoría estaba escrita como `Impresión rígidos UV` (sin tilde y "I" minúscula).  
+
+---
+
+### Reglas Obligatorias
+1. **Categorías**  
+   - Escribir los nombres **exactamente igual** que en los filtros del sistema.  
+   - Incluir tildes, mayúsculas y espacios según corresponda.  
+   **Correcto:** `Impresión Rígidos UV`.  
+
+2. **Campos Obligatorios**  
+   - Ningún campo debe quedar en blanco. Usar:  
+     - `None`  
+     - `-` (guión)  
+     - `0` (cero) en precios.  
+   - Evitar filas vacías al final de la lista.  
+
+3. **Actualización de Productos**  
+   - Cuando un producto se agrega a un pedido, el sistema crea una **copia estática** de sus atributos (nombre, categoría y precio).  
+   - **Consecuencia:** Si la categoría estaba mal escrita al momento del pedido, Taller no lo verá, incluso si se corrige después en la lista maestra.  
+
+---
+
+### Solución para Casos Existentes
+1. **Verificar pedidos afectados:**  
+   - Revisar la categoría registrada en el pedido (ejemplo: `Impresión rígidos UV`).  
+2. **Corregir en la lista maestra:**  
+   - Asegurarse de que la categoría esté escrita correctamente (ejemplo: `Impresión Rígidos UV`).  
+3. **Recrear el pedido (si es necesario):**  
+   - El sistema no aplica cambios retroactivos. Para evitar retrasos, recrear el pedido con la categoría corregida.  
+
+---
+
+### Ejemplo de Estructura Correcta
+| ID    | Categoría (Correcta)          | Nombre del Producto                          | Precio  |
+|-------|-------------------------------|---------------------------------------------|---------|
+| I077  | Impresión Rígidos UV          | IMPRESIÓN RÍGIDOS UV CON CORTE PLANCHA...   | $41,500 |
+| I078  | Impresión Rígidos UV          | IMPRESIÓN RÍGIDOS UV CON CORTE PLANCHA...   | $37,500 |
+
+**Nota:** Las correcciones en la lista maestra solo afectarán pedidos nuevos.

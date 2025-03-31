@@ -342,6 +342,27 @@ export default defineConfig({
 					autogenerate: { directory: 'settings' },
 				},
 
+				{
+					label: 'Precios',
+					translations: {
+						de: 'Anleitungen',
+						es: 'Guías',
+						ja: 'ガイド',
+						fr: 'Guides',
+						it: 'Guide',
+						id: 'Panduan',
+						'zh-CN': '指南',
+						'pt-BR': 'Guias',
+						'pt-PT': 'Guias',
+						ko: '가이드',
+						tr: 'Rehber',
+						ru: 'Руководства',
+						hi: 'गाइड',
+						uk: 'Ґайди',
+					},
+					autogenerate: { directory: 'prices' },
+				},
+
 
 				{
 					label: 'Ecommerce',
