@@ -86,28 +86,7 @@ export default defineConfig({
 						uk: 'Почніть звідси',
 					},
 					items: [
-						'getting-started',
-						'manual-setup',
-						{
-							label: 'Nota para el Equipo',
-							slug: 'environmental-impact',
-							translations: {
-								de: 'Umweltbelastung',
-								es: 'Documentación ecológica',
-								ja: '環境への負荷',
-								fr: 'Impact environnemental',
-								it: 'Impatto ambientale',
-								id: 'Dampak terhadap lingkungan',
-								'zh-CN': '环境影响',
-								'pt-BR': 'Impacto Ambiental',
-								'pt-PT': 'Impacto Ambiental',
-								ko: '환경적 영향',
-								tr: 'Çevre Etkisi',
-								ru: 'Влияние на окружающую среду',
-								hi: 'पर्यावरणीय प्रभाव',
-								uk: 'Вплив на довкілля',
-							},
-						},
+						'getting-started'
 					],
 				},
 
